@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<type name ="ftp1">
+		<ftp>
+			<ftp_ip>10.161.8.84</ftp_ip>
+			<ftp_port>21</ftp_port>
+			<ftp_user>ftpuser</ftp_user>
+			<ftp_pass>WYJCfw!84wFY</ftp_pass>
+			<!--远程路径，ftp工具登录后获取的路径，不是ftp站点的物理地址-->
+			<remote_filepath>/test</remote_filepath>
+			<!--本地文件路径-->
+			<local_filepath>/Files</local_filepath>			
+		</ftp>
+		<file>
+			<!--默认1，表示获取的是昨天的数据;0表示获取今天的数据;2表示获取前天的数据；以此类推-->
+			<file_interval>1</file_interval>
+			<!--文件前缀-->
+			<file_ux>us_</file_ux>
+			<!--文件后缀-->
+			<file_dx>_dx</file_dx>
+			<!--字段分隔符-->
+			<file_split>,</file_split>
+			<!--文件扩展名:csv,txt,log等-->
+			<file_ex>csv</file_ex>
+			<!--文件中日期格式 比如 ux_yyyyMMdd_ex;此日期为采集的时间点-->
+			<file_dateset>yyyyMMddhh</file_dateset>
+		</file>
+		<fix>
+			<!--是否补采，默认0，其他表示需要补采，补采则使用filled_date作为日期-->
+			<filled>0</filled>
+			<!--如果补采，补采的日期是哪天,格式：yyyyMMddhhmmss-->
+			<filled_date></filled_date>
+		</fix>
+	</type>
+</root>
