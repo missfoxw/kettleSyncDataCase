@@ -6,3 +6,4 @@
 
 ## 增量同步
 场景：B业务系统提供数据，DB->Oracle；A业务系统需要周期对A系统现网数据进行增量同步，DB->Informix。
+![](https://github.com/missfoxw/kettle-SyncFTP/blob/feature-20190411/Sync-incremental/sync-incremental.png)
